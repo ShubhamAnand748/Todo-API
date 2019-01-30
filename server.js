@@ -38,24 +38,10 @@ app.post('/todos', function (req, res) {
     body.id = todoNextId++;
 
     todos.push(body);
-
+    
     res.json(body);
 });
 
 app.listen(PORT, function () {
     console.log('Express Server Started on : ' + PORT);
 });
-
-// {
-//     id: 1,
-//     description: 'I want to go home!',
-//     completed: false
-// }, {
-//     id: 2,
-//     description: 'I need your help!',
-//     completed: false
-// }, {
-//     id: 3,
-//     description: 'I want to go home for holi celebration!',
-//     completed: true
-// }
