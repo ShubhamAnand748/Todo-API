@@ -1,15 +1,26 @@
 {
   "name": "todo-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
-    "express": "^4.13.3"
-  }
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhamAnand748/Todo-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShubhamAnand748/Todo-API/issues"
+  },
+  "homepage": "https://github.com/ShubhamAnand748/Todo-API#readme",
+  "description": ""
 }
