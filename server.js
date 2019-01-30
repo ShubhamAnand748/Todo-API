@@ -19,8 +19,8 @@ app.get('/todos', function (req, res) {
 
 app.get('/todos/:id', function (req, res) {
     var todoId = parseInt(req.params.id, 10);
-    
-    var matchedTodo = _.findWhere(todos, {id:todoId});
+
+    var matchedTodo = _.findWhere(todos, { id: todoId });
 
     if (matchedTodo) {
         res.json(matchedTodo);
@@ -39,8 +39,21 @@ app.post('/todos', function (req, res) {
     body.description = body.description.trim();
 
     body.id = todoNextId++;
-    todos.push(body); 
+    todos.push(body);
     res.json(body);
+});
+
+app.delete('/todos/:id', function (req, res) {
+    var todoId = parseInt(req.params.id, 10);
+
+    var matchedTodo = _.findWhere(todos, { id: todoId });
+
+    if (!matchedTodo) {
+        res.status(404).json({ "error": "No todo found" });
+    } else {
+        todos = _.without(todos, matchedTodo);
+        res.json(matchedTodo);
+    }
 });
 
 app.listen(PORT, function () {
