@@ -36,6 +36,25 @@ app.get('/todos', function (req, res) {
     }, function(e) {
         res.status(500).send();
     });
+<<<<<<< HEAD
+=======
+
+    // var filteredTodods = todos;
+
+    // if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'true') {
+    //     filteredTodods = _.where(filteredTodods, { completed: true });
+    // } else if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'false') {
+    //     filteredTodods = _.where(filteredTodods, { completed: false });
+    // }
+
+    // if (queryParams.hasOwnProperty('description') && queryParams.description.length > 0) {
+    //     filteredTodods = _.filter(filteredTodods, function (todo) {
+    //         return todo.description.toLowerCase().indexOf(queryParams.description.toLowerCase()) > -1;
+    //     });
+    // }
+
+    // res.json(filteredTodods);
+>>>>>>> 8d40c57ffb5179411866d9acd218365b1a4bbafd
 });
 
 app.get('/todos/:id', function (req, res) {
