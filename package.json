@@ -13,6 +13,8 @@
     "express": "^4.13.3",
     "mysql": "github:mysqljs/mysql",
     "mysql2": "^1.6.4",
+    "pg": "^4.4.1",
+    "pg-hstore": "^2.3.2",
     "sequelize": "^3.34.0",
     "sequelize-cli": "^5.4.0",
     "underscore": "^1.8.3"
